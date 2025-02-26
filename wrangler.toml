@@ -1,0 +1,3 @@
+name = "grok3-api-cf"
+main = "index.js"
+compatibility_date = "2025-02-26"

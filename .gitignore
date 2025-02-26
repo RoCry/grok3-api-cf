@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Production build files
+dist/
+.wrangler/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+.DS_Store
