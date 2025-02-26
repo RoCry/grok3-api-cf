@@ -11,10 +11,15 @@ npx wrangler secret put AUTH_TOKEN
 npx wrangler secret put GROK3_COOKIE
 ```
 
+### Explain
+
+- `AUTH_TOKEN`: The token you will be using like an OPENAI API token, see below in the curl command
+- `GROK3_COOKIE`: It looks like `sso=ey...; sso-rw=ey...`, you can copy it from your browser
+
 ## Usage
 
 ```bash
-curl -H "Authorization: Bearer cf-worker-token" \
+curl -H "Authorization: Bearer AUTH_TOKEN" \
 -X POST 'https://your-worker-url.workers.dev/v1/chat/completions' \
 -H 'Content-Type: application/json' \
 -d '{"messages": [{"role": "user", "content": "Hello"}], "model": "grok-3"}'
